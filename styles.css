@@ -1,0 +1,107 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #870b5e;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 3em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#timer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    font-size: 2em;
+    color: #333;
+}
+
+.timer-item {
+    transition: transform 0.3s ease-in-out;
+}
+.timer-item {
+    font-size: 2em;
+    padding: 0 10px;
+    text-align: center;
+}
+
+.timer-item span {
+    display: block;
+    font-size: 3em;
+}
+
+.timer-item p {
+    margin-top: 5px;
+    border-top: 1px solid #ccc;
+    padding-top: 5px;
+    color: #666;
+}
+.colon {
+    font-size: 2em;
+    color: #666;
+}
+
+.timer-item:hover {
+    transform: scale(1.1);
+}
+
+@keyframes countdown-animation {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.timer-item {
+    animation: countdown-animation 1s ease-in-out infinite;
+}
+.timer-text {
+    font-size: 0.8em;
+    color: #666;
+    text-align: center;
+    margin-top: 5px;
+}
+.countdowns {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.countdown {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+    background-color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 90%;
+}
+.timer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+.start{
+    background-color: red;
+    border: none;
+    border-radius: 10%;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
